@@ -1,0 +1,15 @@
+@import url("./global/reset.css");
+@import url("./global/typography.css");
+@import url("./global/layout.css");
+@import url("./global/colors.css");
+@import url("./global/buttons.css");
+@import url("./global/inputs.css");
+@import url("./global/utils.css");
+@import url("./components/article.css");
+@import url("./components/header.css");
+@import url("./components/footer.css");
+@import url("./components/home.css");
+@import url("./components/about.css");
+@import url("./components/portafolio.css");
+@import url("./components/contactme.css");
+@import url("./components/project-page.css");

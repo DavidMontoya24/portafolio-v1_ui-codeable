@@ -1,0 +1,28 @@
+/* HOME */
+
+.articles {
+  font-family: var(--font-primary);
+}
+
+.articles-container {
+  text-align: center;
+  padding: 48px 16px;
+  gap: 8px;
+}
+
+.card__container {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 2fr))
+}
+
+.card {
+  margin: 8px;
+  display: grid;
+  gap: 8px;
+  text-align: left;
+}
+
+.card-footer {
+  color: var(--primary-dark);
+}

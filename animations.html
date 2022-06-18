@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/icons/favicon-david01.ico">
+    <title>Animations</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
+
+      :root {
+        --font-primary: "Open Sans", "Segoe UI", Tahoma, sans-serif;
+        --color-dot: white;
+      }
+
+      .container-md {
+        font-family: var(--font-primary);
+        max-width: 768px;
+        padding: 0 16px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 3rem;
+      }
+
+      .animations-buttons {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 3rem;
+      }
+
+      .btn {
+        border: 0px;
+        font-family: var(--font-primary);
+        border-radius: 5px;
+        padding: 0.5rem 1rem;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+      }
+
+      .btn-1:focus {
+        outline: 2px solid #db2777;
+        outline-offset: 0.15rem;
+      }
+
+      .btn-1:hover {
+        background-color: #db2777;
+      }
+
+      .btn-2:focus {
+        outline: 2px solid #57534e;
+        outline-offset: 0.15rem;
+      }
+
+      .btn-2:hover {
+        background-color: #57534e;
+      }
+
+      .btn-3:focus {
+        outline: 2px solid #e7e5e4;
+        outline-offset: 0.15rem;
+      }
+
+      .btn-3:hover {
+        background-color: #e7e5e4;
+      }
+
+      .btn:active {
+        transform: translateY(0.2em);
+      }
+
+      .btn-1:active,
+      .btn-2:active,
+      .btn-3:active {
+        outline: solid white;
+      }
+
+      .btn-1 {
+        background-color: #f472b6;
+        color: white;
+      }
+
+      .btn-2 {
+        background-color: #78716c;
+        color: white;
+      }
+
+      .btn-3 {
+        background-color: #f5f5f4;
+      }
+
+      .dot {
+        height: 4px;
+        width: 4px;
+        border-radius: 4px;
+        background-color: transparent;
+        color: transparent;
+        box-shadow: 0px 4px 0px -1px var(--color-dot),
+          2.8284px 2.8284px 0px -1px var(--color-dot),
+          4px 0px 0px -1px var(--color-dot),
+          2.8284px -2.8284px 0px -1px var(--color-dot),
+          0px -4px 0px -1px var(--color-dot),
+          -2.8284px -2.8284px 0px -1px var(--color-dot),
+          -4px 0px 0px -1px var(--color-dot),
+          -2.8284px 2.8284px 0px -1px var(--color-dot);
+        transition: none;
+        animation: dotSpin 0.8s infinite step-end;
+      }
+
+      @keyframes dotSpin {
+        0%,
+        100% {
+          box-shadow: 2.8284px 2.8284px 0px -1px var(--color-dot),
+            4px 0px 0px -1px var(--color-dot),
+            2.8284px -2.8284px 0px -1px var(--color-dot),
+            0px -4px 0px -1px var(--color-dot),
+            -2.8284px -2.8284px 0px -1px var(--color-dot),
+            -4px 0px 0px -1px var(--color-dot),
+            -2.8284px 2.8284px 0px -1px var(--color-dot);
+        }
+        12.5% {
+          box-shadow: 0px 4px 0px -1px var(--color-dot),
+            4px 0px 0px -1px var(--color-dot),
+            2.8284px -2.8284px 0px -1px var(--color-dot),
+            0px -4px 0px -1px var(--color-dot),
+            -2.8284px -2.8284px 0px -1px var(--color-dot),
+            -4px 0px 0px -1px var(--color-dot),
+            -2.8284px 2.8284px 0px -1px var(--color-dot);
+        }
+        25% {
+          box-shadow: 0px 4px 0px -1px var(--color-dot),
+            2.8284px 2.8284px 0px -1px var(--color-dot),
+            2.8284px -2.8284px 0px -1px var(--color-dot),
+            0px -4px 0px -1px var(--color-dot),
+            -2.8284px -2.8284px 0px -1px var(--color-dot),
+            -4px 0px 0px -1px var(--color-dot),
+            -2.8284px 2.8284px 0px -1px var(--color-dot);
+        }
+        37.5% {
+          box-shadow: 0px 4px 0px -1px var(--color-dot),
+            2.8284px 2.8284px 0px -1px var(--color-dot),
+            4px 0px 0px -1px var(--color-dot),
+            0px -4px 0px -1px var(--color-dot),
+            -2.8284px -2.8284px 0px -1px var(--color-dot),
+            -4px 0px 0px -1px var(--color-dot),
+            -2.8284px 2.8284px 0px -1px var(--color-dot);
+        }
+        50% {
+          box-shadow: 0px 4px 0px -1px var(--color-dot),
+            2.8284px 2.8284px 0px -1px var(--color-dot),
+            4px 0px 0px -1px var(--color-dot),
+            2.8284px -2.8284px 0px -1px var(--color-dot),
+            -2.8284px -2.8284px 0px -1px var(--color-dot),
+            -4px 0px 0px -1px var(--color-dot),
+            -2.8284px 2.8284px 0px -1px var(--color-dot);
+        }
+        62.5% {
+          box-shadow: 0px 4px 0px -1px var(--color-dot),
+            2.8284px 2.8284px 0px -1px var(--color-dot),
+            4px 0px 0px -1px var(--color-dot),
+            2.8284px -2.8284px 0px -1px var(--color-dot),
+            0px -4px 0px -1px var(--color-dot),
+            -4px 0px 0px -1px var(--color-dot),
+            -2.8284px 2.8284px 0px -1px var(--color-dot);
+        }
+        75% {
+          box-shadow: 0px 4px 0px -1px var(--color-dot),
+            2.8284px 2.8284px 0px -1px var(--color-dot),
+            4px 0px 0px -1px var(--color-dot),
+            2.8284px -2.8284px 0px -1px var(--color-dot),
+            0px -4px 0px -1px var(--color-dot),
+            -2.8284px -2.8284px 0px -1px var(--color-dot),
+            -2.8284px 2.8284px 0px -1px var(--color-dot);
+        }
+        87.5% {
+          box-shadow: 0px 4px 0px -1px var(--color-dot),
+            2.8284px 2.8284px 0px -1px var(--color-dot),
+            4px 0px 0px -1px var(--color-dot),
+            2.8284px -2.8284px 0px -1px var(--color-dot),
+            0px -4px 0px -1px var(--color-dot),
+            -2.8284px -2.8284px 0px -1px var(--color-dot),
+            -4px 0px 0px -1px var(--color-dot);
+        }
+      }
+
+      .btn-loading {
+        border: 0px;
+        font-family: var(--font-primary);
+        border-radius: 5px;
+        padding: 0.5rem 1rem;
+        text-transform: uppercase;
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 0.5rem;
+        align-items: center;
+        cursor: pointer;
+        background-color: #f472b6;
+        color: white;
+      }
+
+      .checkbox-option {
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+      }
+
+      .checkbox-default {
+        appearance: none;
+        width: 1rem;
+        height: 1rem;
+        border: 1px solid;
+        border-radius: 4px;
+        border-color: #d1d5db;
+        background-color: white;
+        cursor: pointer;
+      }
+
+      .checkbox-default:checked {
+        border-color: #f472b6;
+        background-color: #f472b6;
+        background-image: url(/assets/icons/checkbox-icon1.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        animation: checkIn 0.2s linear;
+      }
+
+      .checkbox-default:focus {
+        box-shadow: 0px 0px 0px 1.5px white, 0px 0px 0px 3px #f472b6;
+      }
+
+      @keyframes checkIn {
+        50% {
+          transform: scale(1.2, 1.2);
+        }
+
+        75% {
+          transform: scale(1.05, 1.05);
+        }
+      }
+
+      .radio-default {
+        appearance: none;
+        width: 1rem;
+        height: 1rem;
+        border-radius: 8px;
+        border: 1px solid;
+        border-color: #d1d5db;
+        background-color: white;
+        cursor: pointer;
+      }
+
+      .radio-default:checked {
+        background-color: white;
+        border: 0;
+        box-shadow: 0px 0px 0px 4px #f472b6 inset;
+        outline: 2px solid #f472b6;
+        outline-offset: 2px;
+        animation: checkRadioIn 0.2s linear;
+      }
+
+      @keyframes checkRadioIn {
+        0% {
+          box-shadow: 0px 0px 0px 8px #f472b6 inset;
+        }
+
+        75% {
+          box-shadow: 0px 0px 0px 4px #f472b6 inset;
+        }
+
+        100% {
+          box-shadow: 0px 0px 0px 4px #f472b6 inset;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-md">
+      <h3>buttons</h3>
+      <section class="animations-buttons">
+        <button class="btn btn-1">button text</button>
+        <button class="btn btn-2">button text</button>
+        <button class="btn btn-3">button text</button>
+      </section>
+
+      <h3>loading button</h3>
+      <section class="loading-button-section">
+        <button class="btn-loading">
+          primary button
+          <div class="dot"></div>
+        </button>
+      </section>
+
+      <h3>checkboxes</h3>
+      <section>
+        <div class="checkbox-option">
+          <input
+            type="checkbox"
+            class="checkbox-default"
+            id="opt1"
+            name="opt1"
+          />
+          <div>
+            <label class="text" for="opt1">Option 01</label>
+          </div>
+        </div>
+        <div class="checkbox-option">
+          <input
+            type="checkbox"
+            class="checkbox-default"
+            id="opt2"
+            name="opt2"
+          />
+          <div>
+            <label class="text" for="opt2">Option 02</label>
+          </div>
+        </div>
+      </section>
+
+      <h3>radio checkbox</h3>
+      <section>
+        <div class="checkbox-option">
+          <div>
+            <input
+              type="radio"
+              class="radio-default"
+              id="opt3"
+              name="opt"
+              value="opt3"
+            />
+            <label for="opt3">Option 01</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              class="radio-default"
+              id="opt4"
+              name="opt"
+              value="opt4"
+            />
+            <label for="opt4">Option 02</label>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

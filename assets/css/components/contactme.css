@@ -1,0 +1,40 @@
+/* CONTACT */
+
+.contact {
+  font-family: var(--font-primary);
+}
+
+.contact__container {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.contact__content {
+  max-width: 640px;
+  margin: auto;
+}
+
+.form-01__wrapper,
+.form-02__wrapper{
+  text-align: left;
+}
+
+.form-01__wrapper {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.form-02__wrapper {
+  margin: 2rem 0rem;
+}
+
+.form__check-option {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.checkbox-icon{
+  height: 10px;
+  width: 10px;
+}

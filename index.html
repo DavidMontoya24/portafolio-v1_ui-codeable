@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="icon" href="./assets/icons/favicon-david01.ico">
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <nav class="container-lg navbar">
+        <a href="index.html" class="text-decoration-none">
+          <h1 class="heading-md navbar__logo">David Montoya</h1>
+        </a>
+        <div class="navbar__btn btn">
+          <img src="/assets/icons/bars-icon.svg" alt="navbar-menu-icon" onclick="showMenu()">
+        </div>
+        <div class="navbar__links">
+          <ul class="navbar__links-ul list-style-none">
+            <li>
+              <a href="/01_article.html" class="link text-md text-semibold">Articles</a>
+            </li>
+            <li>
+              <a href="/03_portfolio.html" class="link text-md text-semibold">Portafolio</a>
+            </li>
+            <li>
+              <a href="/02_about.html" class="link text-md text-semibold">About</a>
+            </li>
+          </ul>
+          <a href="/04_contactme.html" class="text-decoration-none">
+            <button class="btn btn-sm btn-primary">Contact Me</button>
+          </a>
+        </div>
+      </nav>
+
+      <!-- HEADER MOBILE-->
+      <div class="container-lg navbar__mobile">
+        <ul class="navbar__mobile-ul list-style-none">
+          <li>
+            <a href="/01_article.html" class="link text-md text-semibold">Articles</a>
+          </li>
+          <li>
+            <a href="/03_portfolio.html" class="link text-md text-semibold">Portafolio</a>
+          </li>
+          <li>
+            <a href="/02_about.html" class="link text-md text-semibold">About</a>
+          </li>
+        </ul>
+        <a href="/04_contactme.html" class="text-decoration-none flex">
+          <button class="btn btn-full btn-sm btn-primary">Contact Me</button>
+        </a>
+      </div>
+
+      <!-- HEADER SHOWCASE-->
+      <div class="container-lg header__showcase">
+        <p class="heading-xl showcase__title">
+          Hi! I'm <strong style="color: var(--primary-regular)">David</strong>,
+          full stack developer looking for new adventures
+        </p>
+        <p class="text-xl text-light showcase__desc">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget velit
+          risus tellus viverra luctus in odio amet. Quisque viverra integer
+          lectus euismod quisque adipiscing. Sed posuere sed bibendum mi orci,
+          commodo, quam. Sagittis, donec sit bibendum mi nisl semper sed.
+        </p>
+      </div>
+    </header>
+    <!-- SECTION -->
+    <section class="articles">
+      <div class="container-lg articles-container">
+        <p class="heading-lg text-semibold">Last Articles</p>
+        <p class="text-lg text-regular">Thinks I have learned lately</p>
+        <section class="card__container">
+          <section class="card">
+            <p class="text-xs text-semibold">MARCH 16, 2022</p>
+            <p class="heading-md text-regular">Learning Ruby in 4 weeks</p>
+            <p class="text-lg text-light">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Ullamcorper cursus at viverra netus mauris, fermentum felis. Amet
+              purus viverra urna, purus, quam vestibulum dignissim etiam eu.
+              Enim, facilisi donec est sollicitudin vulputate.
+            </p>
+            <p class="text-sm text-semibold card-footer">READ MORE</p>
+          </section>
+          <section class="card">
+            <p class="text-xs text-semibold">MARCH 16, 2022</p>
+            <p class="heading-md text-regular">Learning Ruby in 4 weeks</p>
+            <p class="text-lg text-light">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Ullamcorper cursus at viverra netus mauris, fermentum felis. Amet
+              purus viverra urna, purus, quam vestibulum dignissim etiam eu.
+              Enim, facilisi donec est sollicitudin vulputate.
+            </p>
+            <p class="text-sm text-semibold card-footer">READ MORE</p>
+          </section>
+          <section class="card">
+            <p class="text-xs text-semibold">MARCH 16, 2022</p>
+            <p class="heading-md text-regular">Learning Ruby in 4 weeks</p>
+            <p class="text-lg text-light">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Ullamcorper cursus at viverra netus mauris, fermentum felis. Amet
+              purus viverra urna, purus, quam vestibulum dignissim etiam eu.
+              Enim, facilisi donec est sollicitudin vulputate.
+            </p>
+            <p class="text-sm text-semibold card-footer">READ MORE</p>
+          </section>
+          <section class="card">
+            <p class="text-xs text-semibold">MARCH 16, 2022</p>
+            <p class="heading-md text-regular">Learning Ruby in 4 weeks</p>
+            <p class="text-lg text-light">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Ullamcorper cursus at viverra netus mauris, fermentum felis. Amet
+              purus viverra urna, purus, quam vestibulum dignissim etiam eu.
+              Enim, facilisi donec est sollicitudin vulputate.
+            </p>
+            <p class="text-sm text-semibold card-footer">READ MORE</p>
+          </section>
+        </section>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container-lg footer__content">
+        <p class="heading-xl text-semibold">Can I help you?</p>
+        <button class="btn btn-lg btn-primary">Get in touch!</button>
+      </div>
+    </footer>
+    
+    <!-- SCRIPT -->
+    <script>
+      let navBarMobile = document.querySelector(".navbar__mobile");
+      function showMenu () {
+      navBarMobile.classList.toggle("navbar__mobile-open");
+    }
+    </script>
+  </body>
+</html>

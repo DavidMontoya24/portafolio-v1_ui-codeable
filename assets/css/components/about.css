@@ -1,0 +1,85 @@
+/* -----SKILLS---- */
+
+.skills {
+  font-family: var(--font-primary);
+}
+
+.skills-container {
+  text-align: center;
+  padding: 3rem 0rem;
+}
+
+.skills__wrapper {
+  text-align: left;
+  display: grid;
+  margin: 1rem;
+  gap: 35px;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 3fr))
+}
+
+.skill__card {
+  display: grid;
+  grid-template-columns: 25.6px auto;
+  grid-template-rows: 25.6px auto;
+  gap: 12px;
+}
+
+.skill-title {
+  line-height: 25px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.check-icon {
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.skill-desc {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+/* -----HOBBIES---- */
+
+.hobbies-container {
+  background-color: var(--primary-lighter);
+  text-align: center;
+  padding: 3rem 0rem;
+}
+
+.skills__header,
+.hobbies__header {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.hobbies__wrapper {
+  display: grid;
+  margin: 1rem;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.hobbie-card {
+  min-width: 250px;
+  min-height: 300px;
+  background-color: var(--primary-regular);
+
+}
+
+.hobbie-img {
+  height: 220px;
+  width: 100%;
+  border-radius: 0.5rem;
+  object-fit: cover;
+}
+
+.hobbies__paragraph {
+  text-align: center;
+  padding: 0.5rem 0.5rem;
+}
